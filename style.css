@@ -1,4 +1,5 @@
 :root {
+  /* Variables */
   --cell-size: 50px;
   --cell-color: #ffffff;
   --background-color: #444444;
@@ -49,5 +50,5 @@
   margin: 20vh auto;
   gap: var(--box-gap);
   background-color: var(--background-color);
-  padding: var(--box-gap);;
+  padding: var(--box-gap);
 }

@@ -6,13 +6,13 @@ class BoxComponent extends HTMLElement {
   }
 
   set boxID(boxID) {
-    console.log('ran setter');
     this.#boxID = boxID;
   }
 
   connectedCallback() {
     this.classList.add('box');
 
+    // Create a 3x3 box of cell components
     for (let r = 0; r < 3; r++) {
       const row = document.createElement('div');
       row.classList.add('cell-row');
