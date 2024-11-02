@@ -11,6 +11,9 @@
   height: var(--cell-size);
   width: var(--cell-size);
   background-color: var(--cell-color);
+  text-align: center;
+  line-height: var(--cell-size);
+  font-size: 20px;
 }
 
 .cell:hover {
