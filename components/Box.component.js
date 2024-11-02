@@ -1,12 +1,17 @@
 class BoxComponent extends HTMLElement {
-  #boxID;
+  #boxRow;
+  #boxCol;
 
   constructor() {
     super();
   }
 
-  set boxID(boxID) {
-    this.#boxID = boxID;
+  set boxCol(boxCol) {
+    this.#boxCol = boxCol;
+  }
+
+  set boxRow(boxRow) {
+    this.#boxRow = boxRow;
   }
 
   connectedCallback() {
@@ -19,7 +24,7 @@ class BoxComponent extends HTMLElement {
 
       for (let c = 0; c < 3; c++) {
         const cell = document.createElement('cell-component');
-        cell.cellID = `${this.#boxID}-${r}-${c}`;
+        cell.cellID = `${3*this.#boxRow + r}-${3*this.#boxCol + c}`;
         row.appendChild(cell);
       }
 
