@@ -60,5 +60,6 @@ function generateSudokuGrid() {
 
 export {
     isValid,
-    generateSudokuGrid
+    generateSudokuGrid,
+    createEmptyGrid
 };
